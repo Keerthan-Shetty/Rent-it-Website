@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 50px;
+}
+
+#preloader {
+    background: #000 url('preloader/Rentitloader-gif.gif') center no-repeat;
+    background-size: 20%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar {
+    box-shadow: 0 0 20px 0;
+}
+.dropdown-menu li a{
+    color: #000;
+}
+.dropdown-menu li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.dropdown-menu{
+    display: none;
+}
+.collapse ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+}
+.navbar .navbar-brand {
+    border: 2px solid red;
+    padding: 10px;
+    margin-top: 0;
+    background-color: red;
+}
+
+.navbar-brand span {
+    color: #fff;
+    border: 10px double #000;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    padding-left: 15px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    transition: all 0.6s;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    opacity: 0;
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+}
+
+/* .nav-link:hover{
+                border-top: 5px solid red;
+                padding-top: 40px;
+                transition: all 0.6s;
+                } */
+.icon ul li {
+    display: inline;
+    padding: 15px;
+
+}
+
+.icon ul li a {
+    text-decoration: none;
+    color: red;
+    margin-top: 10px;
+}
+
+.login button {
+    width: 100px;
+    height: 40px;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.781);
+    font-weight: bold;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.20);
+}
+
+.login button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login button:hover {
+    box-shadow: none;
+    transition: all .1s;
+}
+
+@media (max-width:930px) {
+    .nav-link:hover {
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.059);
+    }
+
+    .nav-link::after {
+        top: 0;
+    }
+}
+
+@media (max-width:560px) {
+    .nav-link:hover {
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.059);
+    }
+
+    .nav-link::after {
+        top: 0;
+    }
+}
+.text {
+    margin-top: 20px;
+    background-color: silver;
+    display: flex;
+}
+.text h2 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 2.5rem;
+    float: right;
+}
+.text h2 i {
+    color: red;
+    font-size: larger;
+}
+.text h2 i:hover{
+    transform: scale(1.5);
+}
+.part1{
+    background: #f1f1f1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 20px 0; 
+}
+.part1 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 2fr;
+    grid-template-areas: 
+        "sidebar1 contentspot1 contentspot1 contentspot1"
+        "sidebar1 contentspot1 contentspot1 contentspot1"
+        "sidebar2 contentspot1 contentspot1 contentspot1"
+        "sidebar2 contentspot2 contentspot2 contentspot2"
+        "sidebar3 gallery gallery gallery";
+        gap: 20px;
+}
+.sidebar1{
+    background-color: #fff;
+    grid-area: sidebar1;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.20);
+}
+.inputbox input{
+    width: 100%;
+    height: 40px;
+}
+.inputbox{
+    position: relative;
+}
+.search-icon button{
+    background: transparent;
+    border: transparent;
+}
+.search-icon button{
+    position: absolute;
+    top: 20%;
+    right: 10px;
+}
+.accordian-structure{
+    border: 2px solid grey;
+}
+.sidebar2{
+    background-color: #fff;
+    border-radius: 10px;
+    grid-area: sidebar2;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.20);
+}
+.helping-description{
+    padding: 20px;
+}
+.helping-button button{
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+    width: 150px;
+    height: 50px;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.30);
+}
+.helping-button button:hover{
+    background-color:red;
+    border-color: red;
+}
+.sidebar3{
+    background-color: #fff;
+    grid-area: sidebar3;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.20);
+}
+.brand-cars{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+.brand-cars p{
+    border: 1px solid #000;
+    padding: 5px;
+}
+.brand-cars p:hover{
+    background-color: #000;
+    color: red;
+}
+.contentspot1{
+    background-color: #fff;
+    grid-area: contentspot1;box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    padding: 15px;
+}
+.imaging img{
+    width: 100%;
+    height: 50vh;
+}
+.readmore button{
+    border-color: #a19898;
+    color: #a19898;
+    background-color: #fff;
+    width: 150px;
+    height: 50px;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.30);
+}
+.readmore button:hover{
+    color: #fff;
+    background-color: #000;
+}
+.readmore button:active{
+    cursor: pointer;
+    background: radial-gradient(#b6aaaa4b,#fcf6f68b);
+}
+.contentspot2{
+    background-color: #fff;
+    grid-area: contentspot2;box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    padding: 10px;
+}
+.gallery{
+    background-color: #fff;
+    grid-area: gallery;box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    padding: 10px;
+}
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+    padding: 10px;
+}
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+    
+    &:hover{
+      flex: 7;
+    }
+}
+.item-1 { 
+    background-image: url('rental-img/61550_2022_Jeep_Compass_Trailhawk_Diesel_4x4_AT.jpg');
+  }
+.item-2 { 
+    background-image: url('rental-img/Defender tracking.jpg');
+  }
+.item-3 { 
+    background-image: url('rental-img/viktor-theo-dKoi-VEzFPI-unsplash.jpg');
+  }
+.item-4 { 
+    background-image: url('rental-img/ford-endeavour-2.0-01_0.jpg');
+  }
+.item-5 { 
+    background-image: url('rental-img/kia-seltos-first-drive-007.jpg');
+}
+.item-6 { 
+    background-image: url('rental-img/vcteqdhmxgm21.jpg');
+}
+.item-7 { 
+    background-image: url('rental-img/P90462503_highRes_the-new-bmw-3-series.jpg');
+}
+@media (max-width:530px){
+    .part1 .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.38fr 0.25fr 0.8fr 0.18fr 0.2fr;
+        grid-template-areas: 
+            "sidebar1"
+            "sidebar2"
+            "sidebar3"
+            "contentspot1"
+            "contentspot2"
+            "gallery";
+        gap: 20px;
+    } 
+    .slidebar1{
+        grid-area: slidebar1;
+    }
+    .slidebar2{
+        grid-area: slidebar2;
+    }
+    .slidebar3{
+        grid-area: slidebar3;
+    }
+    .contentspot1{
+        grid-area: contentspot1;
+    }
+    .contentspot2{
+        grid-area: contentspot2;
+       
+    }
+    .gallery{
+        grid-area: gallery;
+    }
+}
+.part2{
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.about-us h5, .newsletter-func h5, .information h5, .item-tags h5{
+    border-bottom: 5px solid red;
+    width: 50%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.social-media1{
+    display: flex;
+    gap: 10px;
+}
+.social-media1 p{
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 6px;
+}
+.social-media1 p:hover{
+    background-color: #000;
+    color: red;
+    transform: scale(1.2);
+}
+.newsletter-func input{
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+}
+.newsletter-func button{
+    background-color: transparent;
+    padding: 10px;
+}
+.newsletter-func button:hover{
+    background-color: #000;
+    color: red;
+}
+.information p:hover{
+    color: red;
+}
+.information p i{
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+}
+.information p i:hover{
+    color: red;
+    transform: scale(1.2);
+}
+.item-tags h5 i{
+    width: 100%;
+}
+@media (max-width:980px){
+    .about-us, .information, .item-tags, .newsletter-func{
+        margin-top: 20%;
+    }
+}
+.page-slider ul li{
+    padding: 10px;
+}
+.page-slider ul li a{
+    
+    color: red;
+    font-size: larger;
+}
+.page-slider ul li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.part3{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: silver;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media button{
+    width: 140px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+}
+.facebook button{
+    background-color: blue;
+    color: #fff;
+    border:blue ;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)
+}
+.instagram button{
+    background: linear-gradient(blue,red,orange);
+    color: #fff;
+    border:transparent;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30) ;
+}
+.twitter button{
+    background-color: black;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)
+}
+.whatsapp button{
+    background-color:green;
+    color: #fff;
+    border:green ;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)
+}
+.part3 p{
+    color: #fff;
+}
+@media (max-width:530px){
+    .social-media{
+        flex-direction: column;
+    } 
+}
+
+/* contacthtml */
+
+.part1-1{
+    background:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url('rental-img/beautiful-shot-urban-city-with-modern-architecture-amazing-scenery.jpg');
+    background-position: center;
+    background-attachment:scroll;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.viewmap a{
+    text-decoration: none;
+    color: #a19898;
+}
+.viewmap a:hover{
+  color: #fff;
+}
+.address-section{
+    color: #a19898; 
+    padding: 10px;
+    border: 1px solid transparent;
+    background: transparent;
+    backdrop-filter: blur(8px);
+}
+
+

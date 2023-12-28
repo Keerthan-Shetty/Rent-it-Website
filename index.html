@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keerthanshetty">
+    <title>RENT IT</title>
+    <link type="image/favicon" rel="icon" href="rental-img/png-transparent-automobile-engineering-car-mechanical-engineering-electrical-engineering-blue-car-blue-car-sketch-car-accident-text-logo-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+
+  <div id="preloader"></div>
+
+  <!-- Navigation menu -->
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h4><span>RENT IT</span></h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
+          <li class="nav-item dropdown">
+            <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <b>HOME <i class="fa-solid fa-caret-down"></i></b>
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">HOME1</a></li>
+              <li><a class="dropdown-item" href="#">HOME2</a></li>
+              <li><a class="dropdown-item" href="#">HOME3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hotdeals"><b style="color: #afa5a5db;">HOT DEALS</b>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carcart.html"><b style="color: #afa5a5db;">VEHICLES</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <b style="color: #afa5a5db;">FEATURES <i class="fa-solid fa-caret-down"></i></b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">
+                <h6>PORTOFOLIO <hr></h6>
+                <p href="#">Portofolio 1 Column</p>
+                <p href="#">Portofolio 1 Column</p>
+                <p href="#">Portofolio 1 Column</p>
+                <p href="#">Portofolio 1 Column</p>
+              </a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html"><b style="color: #afa5a5db;">BLOG</b>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq"><b style="color: #afa5a5db;">FAQ'S</b>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><b style="color: #afa5a5db;">CONTACT</b>
+            </a>
+          </li>
+        </ul>
+        <div class="icon">
+          <ul class="icon-item text-center">
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="login text-center">
+          <button type="button" onclick="openlogin()"><a href="#">LOGIN</a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- login form -->
+
+  <div class="loginpage">
+    <form id="loginform">
+      <div class="loginform">
+        <div class="heading text-center ">
+          <h2>Login</h2>
+        </div><br>
+        <div class="inputbox">
+          <input type="text" name="username" id="username" autocomplete="autocomplete" required>
+          <span>USER-NAME</span>
+        </div>
+        <br>
+        <div class="inputbox">
+          <input type="password" name="password" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required>
+          <span>Password</span>
+        </div>
+        <br>
+        <input type="checkbox" name="checkbox" id="checkbox" required> <span>By Clicking,agree to the <span><a href="#">terms and
+              condition</a></span></span><br>
+        <br>
+        <div class="signinbutton text-center">
+          <button onclick="logindetails()" >Sign-in</button>
+        </div>
+        <br>
+        <div class="createanaccount text-center">
+          <span>If you are newcomer, please <span class="createaccount"><button><a href="">Create an account</a></button></span></span><br>
+        </div>
+        <br>
+        <div class="loginicon text-center">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="closebutton">
+          <button onclick="closeForm()"><i class="fa-solid fa-square-xmark"></i></button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Creating carousel for home page -->
+  <section class="part1">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="phase1">
+            <div class="heading d-none d-sm-block d-md-block">
+              <h3>ALL DISCOUNTS FOR YOU</h3>
+              <h1><b>FIND BEST RENTAL CAR</b></h1>
+            </div>
+            <div class="searchform">
+              <form>
+                <fieldset>
+                  <div class="form-heading">
+                    <h5>Search for Cheap Rental Cars Wherever You Are </h5>
+                    <h3><i class="fa-solid fa-earth-americas"></i></h3>
+                  </div>
+                  <div class="location">
+                    <div class="input1 col-md-4 col-sm-12">
+                      <label for="loca">Pick up location</label><br>
+                      <input type="text" id="loca" name="loca" placeholder="Airport or Anywhere" required>
+                    </div>
+                    <div class="input1 col-md-4 col-sm-12">
+                      <label for="loca1">Pick up Date</label><br>
+                      <input type="date" id="loca1" name="loca1" required>
+                    </div>
+                    <div class="input1 col-md-4 col-sm-12">
+                      <label for="loca2">Pick up time</label><br>
+                      <input type="time" id="loca2" name="loca2" required>
+                    </div>
+                  </div>
+                  <div class="location">
+                    <div class="input1 col-md-4 col-sm-12">
+                      <label for="loca3">Dropping off location</label><br>
+                      <input type="text" id="loca3" class="loca3" placeholder="Airport or Anywhere" required>
+                    </div>
+                    <div class="input1 col-md-4 col-sm-12">
+                      <label for="loca4">Dropping Off Date</label><br>
+                      <input type="date" id="loca4" class="loca4" required>
+                    </div>
+                    <div class="input1 col-md-4 col-sm-12">
+                      <label for="loca5">Dropping Off Time</label><br>
+                      <input type="time" id="loca5" class="loca5" required>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="add">
+                    <h6><i class="fa-solid fa-circle-plus"></i> Advanced Searches</h6>
+                    <button type="submit" onclick="timing()" class="btn btn-danger">Find a Car</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="phase2">
+            <div class="image">
+              <img src="rental-img/s5-sportback-exterior-right-front-three-quarter-5-removebg-preview.png" alt="car-img">
+            </div>
+            <div class="content-1">
+              <h4>GET YOUR FAVOURITE CAR TO YOUR FAMILY</h4>
+              <h2><b>WITH EASY EMI OPTION'S, YOU CAN RENT A CAR TO YOUR DESIRE</b></h2>
+            </div>
+            <div class="image-1">
+              <img src="rental-img/young-couple-talking-sales-person-car-showroom-removebg-preview.png" alt="customer-image">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="phase3">
+            <div class="content-2">
+              <h2><b>GRAB YOUR FAVOURITE LUXURY OR SPORTS CAR</b></h2>
+              <h1><b>WE HAVE ALSO INCLUDED EV SECTION FOR EMISSION FREE....</b></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev d-none d-lg-block" type="button"
+        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next d-none d-lg-block" type="button"
+        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- Grid is implemented by using hover effect -->
+  <section class="part2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 col-md-6 ">
+          <div class="card">
+            <i class="fa-solid fa-gear"></i><br>
+            <h3><b>7/24 CAR SUPPORT</b></h3>
+            <div class="description text-center">
+              <i class="fa-solid fa-gear"></i><br>
+              <h4>7/24 CAR SUPPORT</h4><br>
+              <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4><br>
+              <button type="submit"><b>Read More</b></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-6">
+          <div class="card">
+            <i class="fa-regular fa-calendar-days"></i><br>
+            <h3><b>RESERVATION ANY TIME</b></h3>
+            <div class="description text-center">
+              <i class="fa-solid fa-calendar-days"></i><br>
+              <h4>RESERVATION ANY TIME</h4><br>
+              <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4><br>
+              <button type="submit"><b>Read More</b></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-6">
+          <div class="card">
+            <i class="fa-solid fa-location-dot"></i><br>
+            <h3><b>LOTS OF LOCATION</b></h3>
+            <div class="description text-center">
+              <i class="fa-solid fa-location-dot"></i><br>
+              <h4>LOTS OF LOCATION</h4><br>
+              <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4><br>
+              <button type="submit"><b>Read More</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- It is the combination of both content and carousel with the help of grid -->
+  <section class="part3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <!-- content -->
+        <div class="col-lg-6 col-sm-12">
+          <div class="content1">
+            <h4>What Do You Know About Us</h4>
+            <h3>WHO WE ARE ?</h3><br>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+              sollicitudin,
+              lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+              nibh
+              vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+              ornare
+              odio. Sed non mauris vitae erat consequat auctor eu in elit.</p><br>
+            <div class="sub-content">
+              <p><i class="fa-solid fa-circle-check" style="color: green;"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p><i class="fa-solid fa-circle-check" style="color: green;"></i> Proin tempus sapien non iaculis pretium.</p>
+            </div><br>
+              <div class="buttons">
+                <button type="submit" class="button1"><h6><b>SEE ALL VEHICLES</b></h6></button>
+                <button type="submit" class="button2 "><h6><b>RESERVATION NOW</b></h6></button>
+              </div>
+          </div>
+        </div>
+        <!-- Carousel with the 3 images -->
+        <div class="col-lg-6 col-sm-12">
+          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="rental-img/young-handsome-business-man-choosing-car-car-showroom.jpg" class="d-block w-100" alt="person1">
+              </div>
+              <div class="carousel-item">
+                <img src="rental-img/confident-look-modern-stylish-bearded-businessman-automobile-saloon.jpg" class="d-block w-100" alt="person2">
+              </div>
+              <div class="carousel-item">
+                <img src="rental-img/young-woman-choosing-car-car-showroom.jpg" class="d-block w-100" alt="person3">
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- part4 -->
+
+  <section class="part4" id="hotdeals">
+    <div class="container">
+      <h4 style="color:  #a19898;">What a Kind of Car You Want</h4><br>
+      <h1><b>GREAT RENTAL OFFERS FOR YOU</b></h1><br>
+      <div class="cars">
+        <div class="best-offer">
+          <h4><b>BEST OFFERS</b></h4>
+        </div>
+        <div class="popular-car" id="active">
+          <h4><b>POPULAR CARS</b></h4>
+        </div>
+        <div class="economic-car">
+          <h4><b>ECONOMIC CARS</b></h4>
+        </div>
+      </div>
+      <br>
+      <div class="car-carousel">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-fade d-none d-sm-block"
+          data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item" id="bestcars">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="car1">
+                        <img src="rental-img/P1127269-scaled.jpg" alt="car" style="width:100%;height: 220px;">
+                        <br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">tata Nexon ev</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2023</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> EV</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 1000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="car1">
+                        <img src="rental-img/61550_2022_Jeep_Compass_Trailhawk_Diesel_4x4_AT.jpg" alt="car"
+                          style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">jeep compass</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2019</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 9000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="car1">
+                        <img src="rental-img/P90462503_highRes_the-new-bmw-3-series.jpg" alt="car"
+                          style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">bmw 330i</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button><br>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2021</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 8000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      <div class="car1">
+                        <img src="rental-img/skoda_octavia_vrs_hatchback_014.jpeg" alt="car" style="width:100%;height: 220px;">
+                        <br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">skoda octavia</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2015</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="car1">
+                        <img src="rental-img/16ba93d7-6af9-4366-917e-cdab78be742c.jpg" alt="car"
+                          style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">Hyundai i20</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2015</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="car1">
+                        <img src="rental-img/20200316105742_Tata-Harrier-AT-front-action.jpg" alt="car"
+                          style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">tata harrier</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button><br>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2020</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      <div class="car1">
+                        <img src="rental-img/90455987_3256672267680924_574749401109495808_o.jpg" alt="car"
+                          style="width:100%;height: 220px;">
+                        <br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">Volkswagen polo</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2015</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="car1">
+                        <img src="rental-img/mahindra-xuv700-1.jpg" alt="car" style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">mahindra xuv700</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2015</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="car1">
+                        <img src="rental-img/kia-seltos-first-drive-007.jpg" alt="car" style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">kia seltos</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button><br>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2023</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="car-carousel1">
+        <div id="carouselExampleControlsFadeNoTouching" class="carousel slide carousel-fade d-sm-none" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/P1127269-scaled.jpg" alt="car" style="width:100%;height: 220px;">
+                        <br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">tata Nexon ev</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2023</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> EV</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 1000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/skoda_octavia_vrs_hatchback_014.jpeg" alt="car" style="width:100%;height: 220px;">
+                        <br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">skoda octavia</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2015</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/61550_2022_Jeep_Compass_Trailhawk_Diesel_4x4_AT.jpg" alt="car"
+                          style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">jeep compass</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2019</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 9000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/61550_2022_Jeep_Compass_Trailhawk_Diesel_4x4_AT.jpg" alt="car"
+                          style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">jeep compass</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2019</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 9000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/16ba93d7-6af9-4366-917e-cdab78be742c.jpg" alt="car"
+                          style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">Hyundai i20</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2015</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/20200316105742_Tata-Harrier-AT-front-action.jpg" alt="car"
+                          style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">tata harrier</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button><br>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2020</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/90455987_3256672267680924_574749401109495808_o.jpg" alt="car"
+                          style="width:100%;height: 220px;">
+                        <br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">Volkswagen polo</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2015</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/mahindra-xuv700-1.jpg" alt="car" style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">mahindra xuv700</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2015</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-cards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="car1">
+                        <img src="rental-img/kia-seltos-first-drive-007.jpg" alt="car" style="width:100%;height: 220px;"><br><br>
+                        <div class="car1-body">
+                          <h5 style="text-transform: uppercase;">kia seltos</h5>
+                          <p>Start from $56/per a Day</p>
+                          <button type="submit"><b>RENT IT</b></button><br>
+                        </div><br>
+                        <div class="car-specification">
+                          <p><i class="fa-solid fa-car"></i> 2023</p>
+                          <p><i class="fa-solid fa-gas-pump"></i> Petrol</p>
+                          <p><i class="fa-solid fa-gear"></i> Auto</p>
+                          <p><i class="fa-solid fa-road"></i> 15000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsFadeNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsFadeNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="part5">
+    <div class="container">
+      <div class="management">
+        <div class="row">
+          <div class="manage">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="person-image">
+                <img src="rental-img/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign.jpg" alt="img">
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12">
+              <h1><i class="fa-solid fa-quote-left" style="color:#000;"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae,provident vitae aperiam iste fuga, voluptate incidunt dolor eligendi tempore voluptatum odit ducimus, unde
+                pariatur sunt odio expedita harum quasi fugiat. <i class="fa-solid fa-quote-right" style="color:#000;"></i></h1><br>
+              <h5><b>Antony Das</b><span style="color:#5f5959;"> - Managing Director</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="part6 bg-dark">
+    <form>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="locationform">
+              <h4>Great Rental Cars</h4>
+              <h2><b>FIND YOUR CAR</b></h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="locationform">
+              <label for="loca6">Pick up location</label><br>
+              <input type="text" id="loca6" name="loca6" placeholder="Airport or Anywhere" required>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 col-sm-12">
+            <div class="locationform">
+              <label for="loca7">Pick up date</label><br>
+              <input type="date" id="loca7" name="loca7">
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 col-sm-12">
+            <div class="locationform">
+              <label for="loca8">Car Category</label>
+              <select name="loca8" id="loca8">
+                <option value="select carCategory">select carCategory</option>
+                <option value="Sedan">Sedan</option>
+                <option value="hatchback">hatchback</option>
+                <option value="suv">suv</option>
+                <option value="muv">muv</option>
+                <option value="compact-suv">compact-suv</option>
+                <option value="LUXURY">LUXURY</option>
+                <option value="Ev">ev</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 col-sm-12">
+            <div class="locationform">
+              <div class="add1">
+                <button type="submit" onclick="category()" class="btn btn-danger"><b>Find a Car</b></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="part7">
+    <div class="achievements">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="observe1">
+              <i class="fa-solid fa-heart"></i><br>
+              <h5><b>5657</b></h5>
+              <p><b>HAPPY COSTUMERS</b></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="observe1">
+              <i class="fa-solid fa-car"></i><br>
+              <h5><b>637</b></h5>
+              <p><b>TOTAL CAR COUNT</b></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="observe1">
+              <i class="fa-solid fa-flag"></i><br>
+              <h5><b>1,235,356</b></h5>
+              <p><b>TOTAL KM/MIL</b></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="observe1">
+              <i class="fa-solid fa-comments"></i><br>
+              <h5><b>1255</b></h5>
+              <p><b>CALL CENTER SOLUTIONS</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="part8" id="blog">
+    <div class="container">
+      <div class="poster">
+        <h5 class="text-center">Rental Magazine Here</h5>
+        <h2 class="text-center"><b>RECENT BLOG POST</b></h2><br>
+        <div class="blog-poster">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="poster1">
+                  <div class="img-poster">
+                    <div class="img-poster1">
+                      <img src="rental-img/blue-jeep-photo-shooting-sunset.jpg" alt="carimg">
+                      <div class="carservice">
+                        <p><b>CAR SERVICE</b></p>
+                      </div>
+                      <div class="videoicon">
+                        <i class="fa-solid fa-video"></i>
+                      </div>
+                      <div class="image-poster1icon text-center">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-description">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 col-sm-2 text-center">
+                        <h1><b>21 <br><span><h2><b>DEC</b></h2></span></b></h1>
+                      </div>
+                      <div class="blog-description1 col-lg-9 col-md-8 col-sm-10">
+                        <p>By isamercan | <i class="fa-solid fa-comment"></i> 13 | <i class="fa-solid fa-heart"></i> 346 | <i class="fa-solid fa-share-nodes"></i></p>
+                        <h4><b>Amazing Cars here and best offer waits for you</b></h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="poster1">
+                  <div class="img-poster">
+                    <div class="img-poster1">
+                      <img src="rental-img/beautiful-car-commercial-night.jpg" alt="carimg">
+                      <div class="carservice">
+                        <p><b>REPAIR</b></p>
+                      </div>
+                      <div class="videoicon">
+                        <i class="fa-regular fa-image"></i>
+                      </div>
+                      <div class="image-poster1icon text-center">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-description">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 col-sm-2 text-center">
+                        <h1><b>21 <br><span><h2><b>DEC</b></h2></span></b></h1>
+                      </div>
+                      <div class="blog-description1 col-lg-9 col-md-8 col-sm-10">
+                        <p>By isamercan | <i class="fa-solid fa-comment"></i> 13 | <i class="fa-solid fa-heart"></i> 346 | <i class="fa-solid fa-share-nodes"></i></p>
+                        <h4><b>Amazing Cars here and best offer waits for you</b></h4>
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <div class="see-posts text-center">
+          <button onclick="openpost()"><b>SEE ALL POSTS</b></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- see posts button -->
+
+    <div class="see-button text-center">
+      <div class="see-content" id="see-content">
+        <h4><b>NEW POST</b></h4>
+        <hr>
+        <img src="rental-img/confident-look-modern-stylish-bearded-businessman-automobile-saloon.jpg" alt="img"
+          style="width: 100%;height: 30vh;">
+        <br><br>
+        <p style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus repellat pariatur
+          incidunt similique provident nobis odio vero, perferendis repudiandae quos vitae eius ratione hic dolorum sint,
+          voluptas est minima harum assumenda reprehenderit explicabo? Inventore, nesciunt sint. Recusandae nostrum
+          excepturi quae cupiditate? Eligendi magni aspernatur, est explicabo laboriosam quia repellat aliquid et vero
+          error. Labore esse id error ipsam ut eum?
+        </p>
+        <br>
+        <div class="seepost-close text-center">
+          <button onclick="closepost()"><b>EXIT</b></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- part9 -->
+
+  <section class="part9 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="newsletter">
+            <h5>You Can Follow Us By E-Mail</h5>
+            <h1 style="color: #000;"><b>SUBSCRIBE</b></h1><br>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+            <br>
+            <div class="newslettersearchbar">
+              <div class="inputsearchbar">
+                <input type="text" name="search" id="search" placeholder="Enter your E-mail">
+              </div>
+              <div class="buttonsearchbar">
+                <button type="submit"><b>SUBSCRIBE</b></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- part10 -->
+
+  <section class="part10">
+    <div class="container">
+      <div class="customerservice-content text-center">
+        <h5>Do You Have Any Question or Anything else</h5>
+        <h1><b>COSTUMER SERVICE</b></h1>
+      </div>
+      <div class="customer-emp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="employee">
+                <img src="rental-img/business-man-curly-cute-handsome-guy-black-suit-red-tie-glasses-with-crossed-hands.jpg"
+                  alt="emp-img">
+                <div class="emp-description">
+                  <h2><b>Mathew Johnson</b></h2>
+                  <p>Tech Support</p>
+                  <hr>
+                  <p>Skype: team.member <br>
+                    Tel: 555 555-5555 <br>
+                    <span style="color:red;"> supportname@gmail.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="employee">
+                <img src="rental-img/cheerful-curly-business-girl-wearing-glasses.jpg" alt="emp-img">
+                <div class="emp-description">
+                  <h2><b>Emma Watson</b></h2>
+                  <p>Customer Service</p>
+                  <hr>
+                  <p>Skype: team.member <br>
+                    Tel: 555 555-5555 <br>
+                    <span style="color:red;"> supportname@gmail.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="employee">
+                <img src="rental-img/good-looking-business-woman-with-arms-crossed.jpg" alt="emp-img">
+                <div class="emp-description">
+                  <h2><b>Alia Jackhson</b></h2>
+                  <p>Customer Service</p>
+                  <hr>
+                  <p>Skype: team.member <br>
+                    Tel: 555 555-5555 <br>
+                    <span style="color:red;"> supportname@gmail.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="employee">
+                <img src="rental-img/portrait-expressive-young-man-wearing-formal-suit.jpg" alt="emp-img">
+                <div class="emp-description">
+                  <h2><b>George Fernadus</b></h2>
+                  <p>Customer Service</p>
+                  <hr>
+                  <p>Skype: team.member <br>
+                    Tel: 555 555-5555 <br>
+                    <span style="color:red;"> supportname@gmail.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--part11  faq's-->
+
+  <section class="part11" id="faq">
+    <div class="container">
+      <div class="faq-heading text-center">
+        <h4>See What People Ask to Us</h4>
+        <h2><b>FAQ's</b></h2>
+      </div>
+      <br>
+      <div class="fa1-questions">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    How can can I drop the rental car ?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem cum necessitatibus provident ipsam laborum numquam incidunt voluptates commodi aperiam iusto dicta laudantium repellat hic ipsa magnam iure, nam illum veritatis?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    WHere can I rent the car ?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consequatur excepturi non? Nulla fugit deserunt a ipsam, recusandae id tempore ullam numquam illo quaerat unde magni enim voluptatum aliquid aperiam.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    If I crash a car.What happens ?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem commodi vel deserunt. Reprehenderit voluptate vero quae id non, similique, corporis, consequatur libero eos nesciunt odio? Iusto nisi nihil culpa veritatis?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    How can can I drop the rental car ?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem cum necessitatibus provident ipsam laborum numquam incidunt voluptates commodi aperiam iusto dicta laudantium repellat hic ipsa magnam iure, nam illum veritatis?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Where can I rent the car ?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse  show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique consequatur excepturi non? Nulla fugit deserunt a ipsam, recusandae id tempore ullam numquam illo quaerat unde magni enim voluptatum aliquid aperiam.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    If I crash a car.What happens ?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem commodi vel deserunt. Reprehenderit voluptate vero quae id non, similique, corporis, consequatur libero eos nesciunt odio? Iusto nisi nihil culpa veritatis?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- part12 -->
+
+  <section class="part12" id="contact">
+    <div class="container">
+      <div class="address-content text-center">
+        <h5 style="color: #a19898;">Feel Free to Say Hello!</h5>
+        <h1 style="color: #fff;"><b>GET IN TOUCH WITH US</b></h1>
+      </div>
+      <div class="form-details">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <form>
+              <div class="form-2">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-confirm">
+                      <input type="text" name="name" id="name" placeholder="Name" autocomplete="autocomplete" required>
+                      <div class="form-icon">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-confirm">
+                      <input type="email" name="email" id="email" placeholder="E-mail " autocomplete="@gmail.com" required>
+                      <div class="form-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><br>
+              <div class="form2-confirm">
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <div class="form2-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </div><br>
+              <div class="form2-confirm">
+                <!-- <input type="text" name="message" id="message" placeholder="Message" required> -->
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <div class="form2-icon">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </div><br>
+              <button type="submit" onclick="sendMessage()"><b>SEND MESSAGE</b></button>
+            </form>
+          </div> 
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="form-section">
+              <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+              <br>
+              <p> <i class="fa-solid fa-home"></i> Address: 1600 Pennsylvania Ave NW, Washington, D.C.
+                DC 20500, ABD</p>
+              <p><i class="fa-solid fa-phone"></i> Support Phone: 01865 339665</p>
+              <p><i class="fa-solid fa-envelope"></i> E mails: rentit@example.com</p>
+              <p><i class="fa-solid fa-clock"></i> Working Hours: 09:30-21:00 except on Sundays</p>
+              <p class="viewmap"><a href="contact.html"><i class="fa-solid fa-location-dot"></i> View on The Map</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="part13">
+    <div class="social-media">
+      <div class="facebook">
+        <button href="#"><i class="fa-brands fa-facebook"></i> facebook</button>
+      </div>
+      <div class="instagram">
+        <button href="#"><i class="fa-brands fa-instagram"></i> Instagram</button>
+      </div>
+      <div class="twitter">
+        <button href="#"><i class="fa-brands fa-x-twitter"></i> twitter </button>
+      </div>
+      <div class="whatsapp">
+        <button href="#"><i class="fa-brands fa-whatsapp"></i> whatsapp</button>
+      </div>
+    </div>
+    <br>
+    <p class="text-center"><b><i class="fa-regular fa-copyright"></i> 2023 Nov Rent It — An One Page Rental Car Theme made with passion by Keerthan Shetty</b></p>
+  </footer>
+
+</body>
+</html>
