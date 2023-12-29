@@ -147,9 +147,12 @@ body {
 .text h2 i {
     color: red;
     font-size: larger;
+    animation: heartbeat 1s infinite;
 }
-.text h2 i:hover{
-    transform: scale(1.5);
+ @keyframes heartbeat{
+    to{
+        transform: scale(1.5); 
+    }
 }
 .part1{
     background: #f1f1f1;
