@@ -1,10 +1,17 @@
 // preloader
 
-let loader = document.getElementById("preloader");
+const timeoutValue = 3000; // Adjust this value as needed
 
-window.addEventListener("load",function(){
-    loader.style.display= "none";    
-});
+// Function to hide the preloader after the timeout
+function hidePreloader() {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+}
+
+// Set a timeout to hide the preloader
+setTimeout(hidePreloader, timeoutValue);
+
+
 
 // phase1 location,time,date is noted
 
