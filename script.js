@@ -1,6 +1,6 @@
 // preloader
 
-const timeoutValue = 13000; // Adjust this value as needed
+const timeoutValue = 10000; // Adjust this value as needed
 
 // Function to hide the preloader after the timeout
 function hidePreloader() {

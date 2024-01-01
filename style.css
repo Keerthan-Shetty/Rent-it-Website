@@ -18,7 +18,11 @@ body {
     position: fixed;
     z-index: 100;
 }
-
+@media (max-width:530px){
+    #preloader{
+        background-size: 60%;
+    } 
+}   
 /* navigation */
 
 .dropdown-menu li a{
@@ -852,6 +856,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .seepost-close button:hover{
     background: radial-gradient(blue,red);
+}
+@media (max-width:560px){
+    .see-content{
+        top:62%;
+    }
 }
 
 /* part9 begins here for newsletter */
