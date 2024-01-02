@@ -20,7 +20,7 @@ body {
 }
 @media (max-width:530px){
     #preloader{
-        background-size: 60%;
+        background-size: 80%;
     } 
 }   
 /* navigation */
@@ -401,19 +401,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         margin-left: 1%;
     }
 }
-.part2 .card {
-    border: 2px solid #7c66662e;
-    background-color: #7c66662e;
-    border-radius: 10px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+
+/* part2 */
+
+.part2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
-.card {
+.part2 .card {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
-    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.30);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #7c66662e;
+    background-color: #7c66662e;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.30);
     position: relative;
 }
 .card i {
@@ -430,7 +435,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .description {
     position: absolute;
     background-color: #f40b0b;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     color: #fff;
@@ -507,7 +512,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding-bottom: 40px;
     }
     .part3 .carousel{
-        padding-top: 15%;
+        padding-top: 8%;
     }
 }
 @media (max-width:450px) {
@@ -920,6 +925,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .emp-description{
     padding: 10px;
+    overflow: hidden;
 }
 .emp-description hr{
     width: 100px;
