@@ -66,7 +66,7 @@ function sendMessage(){
     console.log("Message : " + message );
 }   
 
-// login form page using login button
+//login form page using login button
 
 //openpage
 
