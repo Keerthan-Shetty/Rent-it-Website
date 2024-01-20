@@ -93,7 +93,7 @@ body {
     background-color:rgba(255, 0, 0, 0.781);
     font-weight: bold;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 41%);
 }
 .login button a{
     text-decoration: none;
@@ -461,8 +461,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .part3 {
     padding-top: 60px;
     padding-bottom: 60px;
-    justify-content: space-between;
-    align-items: center;
 }
 .content1 h4,h3 {
     color: #fff;
@@ -475,7 +473,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 3px solid #fff;
     background-color: transparent;
     border-radius: 5px;
-    height: 50px;
+    padding: 10px 20px;
     width: 180px;
     color: #fff;
     padding: 14px;
@@ -484,13 +482,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 1px solid red;
     background-color: red;
     border-radius: 5px;
-    height: 50px;
-    width: 180px;
+    padding: 10px 20px;
     color: #fff;
     padding: 15px;
 }
 .button1:hover {
-    border: transparent;
+    border: 3px solid red;
 }
 .button2:hover {
     background-color: #700bf465;
@@ -518,13 +515,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media (max-width:450px) {
     .buttons {
         display: block;
-        padding-bottom: 20px;
     }
     .button1 {
-        margin: 10px;
+        width: 100%;
+        margin-bottom: 20px;
     }
     .button2 {
-        margin: 10px;
+        width: 100%;
     }
 }
 
